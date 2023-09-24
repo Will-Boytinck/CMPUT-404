@@ -7,6 +7,7 @@ def get(host,port):
     '''
     This code was modified from the base code provided in the CMPUT 404 monday lab F23
     '''
+    print("Making a request...")
     request = b"GET / HTTP/1.1\nHost: " + host.encode('utf-8') + b"\n\n"
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((host,port))
@@ -21,5 +22,5 @@ def get(host,port):
     
     
     
-#get("www.google.com", 80)
-get("localhost", 8080)
+get("www.google.com", 80)
+#get("localhost", 8080)
