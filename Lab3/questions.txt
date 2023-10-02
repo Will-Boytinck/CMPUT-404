@@ -1,0 +1,15 @@
+1. https://github.com/Will-Boytinck/CMPUT-404/tree/main/Lab3
+2. We are shown the startup page for Django Admin
+3. “/” gives a 404 File Not Found error, “/polls” shows the view we just created
+4. Migrations are Django's way of propagating changes you make to our models. We need them to create the tables to store our models
+5. When you log into the Django administration site, we are able to see all the models and their information in the database. Custom models become visible after registering them
+6.  "/polls/38/ , "/polls/38/results" and give a 404 Not Found error. "/polls/38/vote" gives a 404 Not Found a str is used instead of a number. We can modify the urls.py file doing "<int:pk> -> <str:pk>"
+7. Because something (ex. A dependency, or user story…)  can change, and you will have to refactor everything – That is both time consuming and error prone
+8. Generic Views reduce boilerplate code when you repeatedly use the same code in several views. 
+   This saves time and reduces needless complexity over regular views. 
+   Generic views should not be used when you need to create a custom webpage with lots of moving elements and unique code
+
+References:
+https://docs.djangoproject.com/en/4.2/topics/migrations/
+https://stackoverflow.com/questions/6485005/django-use-generic-views-or-not
+CMPUT 404 Lab 3 outline, as made by the CMPUT 404 team.
